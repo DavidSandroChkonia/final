@@ -38,6 +38,35 @@ nav ul li {
     margin-left: 415px;
 }
 
+@media only screen and (max-width: 1370px) {
+    nav {
+        display: none;
+        /* flex-wrap: wrap; */
+
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .container-two {
+        flex-wrap: wrap;
+
+    }
+}
+
+/* @media only screen and (max-width: 1352px) {
+    .container-four {
+        flex-wrap: wrap;
+    }
+} */
+
+@media only screen and (max-width: 1411px) {
+    footer {
+        flex-wrap: wrap;
+
+    }
+}
+
+
 
 .container-one {
     width: 1248px;
@@ -82,6 +111,9 @@ nav ul li {
     position: relative;
 }
 
+
+
+
 .search-container {
     /* position: absolute; */
     display: flex;
@@ -92,18 +124,45 @@ nav ul li {
     position: relative;
 }
 
+
+* {
+    box-sizing: border-box;
+}
+
+
 .search-container input {
+
     width: 449px;
     height: 64px;
     margin-top: 323px;
     margin-left: 84px;
     background-color: FFFFFF;
     border-radius: 12px;
+
 }
+
+/* .search-container input:focus {
+    outline: none;
+} */
+
+.search-container button {
+    border: none;
+    background-color: transparent;
+    width: 31px;
+    height: 31px;
+
+}
+
+.search-container button i {
+    font-size: 15px;
+
+}
+
 
 .search-container .buttom {
     width: 20px;
     height: 20px;
+
 }
 
 .topnav input[type=text] {
@@ -114,8 +173,10 @@ nav ul li {
 }
 
 button .fa {
-    width: 45px;
-    height: 45px;
+
+    width: 25px;
+    height: 25px;
+
 }
 
 
@@ -123,16 +184,15 @@ input[type=text] {
     border: 1px solid #ccc;
 }
 
-button {
+/* button {
     border-radius: 12px;
     border: 1px solid #ccc;
 
-}
+} */
 
-.fa-search::before {
+/* .fa-search::before {
     width: 35px;
-}
-
+} */
 
 
 .photo {
@@ -287,9 +347,8 @@ a.four img {
 
 .about-us-box-one {
     margin-top: 80px;
+
 }
-
-
 
 .about-us-box-one img {
     width: 96px;
@@ -637,7 +696,7 @@ footer {
 
 .logo img {
     display: flex;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-top: 40px;
 
 }
@@ -650,7 +709,7 @@ footer {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-top: 30px;
 }
 
@@ -659,7 +718,7 @@ footer {
     display: flex;
     gap: 20px;
     margin-top: 170px;
-    margin-left: 45px;
+    margin-left: 90px;
 
 }
 
