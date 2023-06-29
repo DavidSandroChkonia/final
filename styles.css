@@ -38,37 +38,9 @@ nav ul li {
     margin-left: 415px;
 }
 
-@media only screen and (max-width: 1370px) {
-    nav {
-        display: none;
-        /* flex-wrap: wrap; */
-
-    }
-}
-
-@media only screen and (max-width: 1380px) {
-    .container-two {
-        flex-wrap: wrap;
-
-    }
-}
-
-/* @media only screen and (max-width: 1352px) {
-    .container-four {
-        flex-wrap: wrap;
-    }
-} */
-
-@media only screen and (max-width: 1411px) {
-    footer {
-        flex-wrap: wrap;
-
-    }
-}
-
-
 
 .container-one {
+    position: relative;
     width: 1248px;
     height: 512px;
     background: #C1DCDC;
@@ -111,12 +83,17 @@ nav ul li {
     position: relative;
 }
 
-
-
+.first-line{
+    position: absolute;
+    top:0;
+    left:0;
+}
 
 .search-container {
-    /* position: absolute; */
     display: flex;
+    position: absolute;
+    top:0;
+    left:0;
     margin-bottom: 20px;
 }
 
@@ -124,28 +101,20 @@ nav ul li {
     position: relative;
 }
 
-
 * {
     box-sizing: border-box;
 }
 
-
 .search-container input {
-
-    width: 449px;
+    width: 380px;
     height: 64px;
-    margin-top: 323px;
-    margin-left: 84px;
     background-color: FFFFFF;
     border-radius: 12px;
 
 }
 
-/* .search-container input:focus {
-    outline: none;
-} */
-
 .search-container button {
+    cursor: pointer;
     border: none;
     background-color: transparent;
     width: 31px;
@@ -157,7 +126,6 @@ nav ul li {
     font-size: 15px;
 
 }
-
 
 .search-container .buttom {
     width: 20px;
@@ -181,19 +149,17 @@ button .fa {
 
 
 input[type=text] {
-    border: 1px solid #ccc;
+    border: none;
 }
 
-/* button {
+.input-box{
+    background-color: white;
+    margin-top: 323px;
+    margin-left: 84px;
     border-radius: 12px;
-    border: 1px solid #ccc;
+    padding: 0px 10px;
 
-} */
-
-/* .fa-search::before {
-    width: 35px;
-} */
-
+}
 
 .photo {
     position: absolute;
@@ -336,7 +302,6 @@ a.four img {
 
 .about-us-box-one {
     width: 400px;
-    /* height: 213px; */
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -477,14 +442,12 @@ a.four img {
 
 }
 
-
 .background {
     position: absolute;
     width: 100%;
     height: 1024px;
     margin-top: 135px;
     background-color: #C1DCDC;
-    /* background-size: cover; */
 
 }
 
@@ -514,6 +477,7 @@ a.four img {
 }
 
 .plant-two {
+
     position: absolute;
     width: 352px;
     height: 692px;
@@ -651,7 +615,6 @@ a.four img {
     margin-left: 380px;
     margin-top: 800px;
 
-
 }
 
 .comment-2 p {
@@ -733,7 +696,6 @@ footer {
 }
 
 .information {
-    /* position: absolute; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -744,7 +706,6 @@ footer {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    /* margin-left: 150px; */
 
 }
 
@@ -777,9 +738,6 @@ footer {
 .company h5 {
     font-weight: 700;
 }
-
-
-
 
 .contact {
     display: flex;
